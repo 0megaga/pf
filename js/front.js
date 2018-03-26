@@ -203,10 +203,12 @@ function map() {
 
 function menuSliding() {
 
+    /* note : modif 750 by 992 */
 
     $('.dropdown').on('show.bs.dropdown', function (e) {
 
-            if ($(window).width() > 750) {
+            console.log($(window).width());
+            if ($(window).width() > 992) {
                 $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
 
             } else {
@@ -216,7 +218,7 @@ function menuSliding() {
 
     );
     $('.dropdown').on('hide.bs.dropdown', function (e) {
-        if ($(window).width() > 750) {
+        if ($(window).width() > 992) {
             $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
         } else {
             $(this).find('.dropdown-menu').first().stop(true, true).hide();
