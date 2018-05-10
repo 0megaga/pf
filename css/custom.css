@@ -12,6 +12,12 @@
   margin-bottom: 30px;
 }
 
+.customIconCarousel {
+  color: white;
+  border: none;
+  margin: auto;
+}
+
 @media (max-width: 991px) {
   	.navbar-header {
       	float: none;
